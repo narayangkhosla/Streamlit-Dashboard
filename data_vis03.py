@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 # Load your CSV file
-df = pd.read_csv("./Data-Files/PSales.csv")
+df = pd.read_csv("./PSales.csv")
 st.dataframe(df)
 
 
@@ -49,3 +49,4 @@ if selected_categories:
     st.plotly_chart(sunburst_fig, use_container_width=True)
 else:
     st.info("Please select at least one category to see the charts.")
+
